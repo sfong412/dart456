@@ -9,6 +9,11 @@ h1 {
 img {
     max-width: 600px;
     width: 240px;
+    padding-bottom: 5px;
+}
+
+iframe {
+    padding-bottom: 5px;
 }
 
 table {
