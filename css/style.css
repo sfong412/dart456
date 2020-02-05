@@ -11,8 +11,12 @@ img {
     padding-bottom: 5px;
 }
 
-.showcase {
+.showcase{
     object-fit: cover;
+}
+
+.work {
+    border: 1px black solid;
 }
 
 iframe {
