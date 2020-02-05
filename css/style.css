@@ -11,7 +11,7 @@ img {
     padding-bottom: 5px;
 }
 
-.showcase {
+img .showcase {
     object-fit: cover;
 }
 
