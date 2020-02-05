@@ -11,6 +11,10 @@ img {
     padding-bottom: 5px;
 }
 
+.showcase {
+    object-fit: cover;
+}
+
 iframe {
     padding-bottom: 5px;
 }
