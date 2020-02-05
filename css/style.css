@@ -32,6 +32,10 @@ table {
     margin-right: auto;
 }
 
+.mockup {
+    padding-right:5px;
+}
+
 .members{
     width: 90%;
     margin-left: auto;
