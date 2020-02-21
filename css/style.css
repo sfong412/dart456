@@ -1,13 +1,55 @@
-body {
-    font-family: Helvetica, sans-serif;
+@font-face {
+    font-family: 'sen';
+    src: url('../font/sen_regular_macroman/sen-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-/*
-h1 {
-    font-size: 24px;
+
+@font-face {
+    font-family: 'senbold';
+    src: url('../font/sen_bold_macroman/sen-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-*/
+
+@font-face {
+    font-family: 'senextrabold';
+    src: url('../font/sen_extrabold_macroman/sen-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nerislight';
+    src: url('../font/neris_light_macroman/Neris-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body,
+div,
+p,
+a,
+li,
+ul {
+    font-family: 'nerislight', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'senbold';
+}
+
+.sherm-logo {
+    font-family: 'senextrabold';
+}
+
 img {
-    max-width: 600px;
     padding-bottom: 5px;
 }
 
@@ -15,15 +57,19 @@ img {
     object-fit: cover;
 }
 
+.work {
+    border: 1px black solid;
+}
+
 iframe {
     padding-bottom: 5px;
 }
 
 table {
-  /*  display: block;*/
+    /*  display: block;*/
 }
 
-.title{
+.title {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -36,30 +82,124 @@ table {
     margin-right: auto;
 }
 
-.mockup img{
-    padding-right:15px;
+.mockup img {
+    padding-right: 15px;
 }
 
-.members{
+.members {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 12px 0 12px 0;
 }
 
-.description{
+.description {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 12px 0 12px 0;
 }
 
-.back{/*
+.back {
+    /*
     margin-left: auto;
     margin-right: auto;*/
     margin-left: 5%;
 }
 
-.back p{
+.back p {
     display: inline;
+}
+
+/* Index page CSS */
+
+.home_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+h1.home_banner {
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 25%;
+}
+
+/* Work showcase page CSS */
+
+.main {
+    background-color: #f0324d;
+    color: white;
+}
+
+.top-row {
+    background: #eb7081;
+    padding-bottom: 100px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+#first-pic {
+    position: relative;
+    margin-top: 20px;
+    left: 60px;
+    max-width: 640px;
+}
+
+#title-container{
+    position: absolute;
+    font-family: 'senbold';
+    font-size: 24px;
+    color: white;
+    left: 30%;
+    top: 75px;
+    mix-blend-mode: screen;
+    z-index: 99;
+}
+
+#title-container h1{
+    font-family: 'senextrabold';
+    font-size: 60px;
+}
+
+.list{
+    font-family: 'senextrabold';
+    font-size: 32px;
+    list-style-type: none;
+}
+
+.side-right {
+    width: 100%;
+}
+
+.list li {
+    font-family: 'sen';
+    font-size: 24px;
+    margin-left: 15%;
+}
+
+#title-container .list{
+    padding-left: 26%;
+}
+
+#title-container .list ul {
+}
+
+#title-container .list li{
+
+}
+
+.bottom-row {
+    background-color: #f0324d;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
+    clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);
+}
+
+.bottom-row .list {
+    margin-left: 10%;
 }
