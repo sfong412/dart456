@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'senextrabold';
-    src: url('../font/sen_extrabold_macroman/sen-extrabold-webfont.woff') format('woff');
+    font-family: 'sen';
+    src: url('../font/sen_regular_macroman/sen-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,6 +8,13 @@
 @font-face {
     font-family: 'senbold';
     src: url('../font/sen_bold_macroman/sen-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'senextrabold';
+    src: url('../font/sen_extrabold_macroman/sen-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -129,13 +136,17 @@ h1.home_banner {
 }
 
 .top-row {
-    margin-bottom: 100px;
+    background: #eb7081;
+    padding-bottom: 100px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
 
 #first-pic {
     position: relative;
     margin-top: 20px;
     left: 60px;
+    max-width: 640px;
 }
 
 #title-container{
@@ -157,15 +168,21 @@ h1.home_banner {
 .list{
     font-family: 'senextrabold';
     font-size: 32px;
+    list-style-type: none;
+}
+
+.side-right {
+    width: 100%;
 }
 
 .list li {
+    font-family: 'sen';
     font-size: 24px;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 #title-container .list{
-    padding-left: 32%;
+    padding-left: 26%;
 }
 
 #title-container .list ul {
@@ -176,7 +193,11 @@ h1.home_banner {
 }
 
 .bottom-row {
-    margin-top: 25px;
+    background-color: #f0324d;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
+    clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);
 }
 
 .bottom-row .list {
