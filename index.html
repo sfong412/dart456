@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>sherman fong - portfolio site</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -13,12 +14,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <!--
+        <script src="js/swup.js">
+        </script>
+    -->
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>  
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-        <a class="navbar-brand sherm-logo" href="index.html">sherm.</a>
+        <a class="navbar-brand sherm-logo" href="/index.html">sherm.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +50,7 @@
     </nav>
 
     </div>
-    <div class="container-fluid main">
+    <div id="swup" class="container-fluid main transition-fade">
         <div class="row">
             <div class="col-md">
                 <h1 class="home_banner">sherm is</h1>
@@ -53,12 +60,13 @@
         </div>
         <div class="row">
             <div class="col-md work">
-                <a href="p1.html"><img class="showcase" src="img/traces.png" width="600px" height="400px"></a>
+                <a href="/p1.html"><img class="showcase" src="img/traces.png" width="600px" height="400px"></a>
                 <p>Traces: Fleur-escent (2017)</p>
                 <p><i>digital art</i></p>
             </div>
             <div class="col-md work">
-                <a href="p2.html"><img class="showcase" src="img/sounds-of-weather.jpg" width="600px" height="400px"></a>
+                <a href="/p2.html"><img class="showcase" src="img/sounds-of-weather.jpg" width="600px"
+                        height="400px"></a>
                 <p>Sounds of Weather (2018)</p>
                 <p><i>digital art</i></p>
             </div>
@@ -82,7 +90,8 @@
                 <p><i>music & sound design</i></p>
             </div>
             <div class="col-md work">
-                <a href="p6.html"><img class="showcase" src="img/sherm - nights into dreams.png" width="600px" height="400px"></a>
+                <a href="p6.html"><img class="showcase" src="img/sherm - nights into dreams.png" width="600px"
+                        height="400px"></a>
                 <p>Sherm the Sound Guy - Nights into Dreams (2020)</p>
                 <p><i>music project</i></p>
             </div>

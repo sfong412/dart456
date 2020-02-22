@@ -149,7 +149,7 @@ h1.home_banner {
     max-width: 640px;
 }
 
-#title-container{
+#title-container {
     position: absolute;
     font-family: 'senbold';
     font-size: 24px;
@@ -160,12 +160,12 @@ h1.home_banner {
     z-index: 99;
 }
 
-#title-container h1{
+#title-container h1 {
     font-family: 'senextrabold';
     font-size: 60px;
 }
 
-.list{
+.list {
     font-family: 'senextrabold';
     font-size: 32px;
     list-style-type: none;
@@ -181,16 +181,13 @@ h1.home_banner {
     margin-left: 15%;
 }
 
-#title-container .list{
+#title-container .list {
     padding-left: 26%;
 }
 
-#title-container .list ul {
-}
+#title-container .list ul {}
 
-#title-container .list li{
-
-}
+#title-container .list li {}
 
 .bottom-row {
     background-color: #f0324d;
@@ -202,4 +199,20 @@ h1.home_banner {
 
 .bottom-row .list {
     margin-left: 10%;
+}
+
+/* Swup CSS code */
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 0;
 }
