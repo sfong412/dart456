@@ -1,0 +1,13 @@
+.bottom-row .list {
+    margin-left: 10%;
+    color: red;
+}
+
+@media only screen and (min-width: 100px) {
+
+    .bottom-row .list {
+        margin-left: 50%;
+        color: blue;
+    }
+
+}

@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <title>dart498</title>
+    <title>sherman fong - portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,9 +15,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-        <script defer src="node_modules/swup/dist/swup.min.js"></script>  
-        <script src="js/script.js"></script>
-        <link rel="stylesheet" href="css/style.css">
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,16 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="about.html">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">works</a>
+                    <a class="nav-link" href="works.html">works</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ass2.html">assignment 2</a>
+                    <a class="nav-link" href="contact.html">contact</a>
                 </li>
             </ul>
         </div>
@@ -48,15 +46,15 @@
     <div class="container-fluid main">
         <div class="row top-row">
             <div class="col-md">
-                <img id="first-pic" src="img/sounds-of-weather.jpg">
-                <div id="title-container">
+                <div class="title-container">
                     <h1>SOUNDS OF WEATHER (2018)</h1>
-                    <ul class="list">MEMBERS:
-                        <li><b>SHERMAN FONG</b> - programming & audio engineering</li>
-                        <li><b>DIMITRI KONTOGIANNOS</b> - concept & physical development</li>
-                        <li><b>EMILY TOOKER</b> - physical development</li>
-                    </ul>
                 </div>
+                <img id="first-pic" src="img/sounds-of-weather.jpg">
+                <ul class="list">MEMBERS:
+                    <li><b>SHERMAN FONG</b> - programming & audio engineering</li>
+                    <li><b>DIMITRI KONTOGIANNOS</b> - concept & physical development</li>
+                    <li><b>EMILY TOOKER</b> - physical development</li>
+                </ul>
             </div>
         </div>
         <div class="row bottom-row">
@@ -65,17 +63,23 @@
                     <li>Hitachi HT-354 Turntable, circular wooden discs, motor, charcoal</li>
                     <li>Max/MSP</li>
                 </ul>
-                <p class="description">Sounds of Weather is a collaborative artwork created by Dimitri Kontogiannos, Sherman Fong
-                    and Emily Tooker. The artwork is meant to be an artistic visualization of weather data, using real-time weather
-                    data from OpenWeatherMap to control the motion of the writing arm. The interactivity of the artwork is dependent
-                    on the Arduino Uno microcontroller and Max 7. Max 7 is used to extract values from OpenWeatherMap, such as
-                    temperature data, in order to communicate with the Arduino; allowing control of the motor that holds the writing
-                    arm. Max 7 is also used to control certain aspects of the installation’s background ambient music that plays.</p>
+                <p class="description">Sounds of Weather is a collaborative artwork created by Dimitri Kontogiannos,
+                    Sherman Fong
+                    and Emily Tooker. The artwork is meant to be an artistic visualization of weather data, using
+                    real-time weather
+                    data from OpenWeatherMap to control the motion of the writing arm. The interactivity of the artwork
+                    is dependent
+                    on the Arduino Uno microcontroller and Max 7. Max 7 is used to extract values from OpenWeatherMap,
+                    such as
+                    temperature data, in order to communicate with the Arduino; allowing control of the motor that holds
+                    the writing
+                    arm. Max 7 is also used to control certain aspects of the installation’s background ambient music
+                    that plays.</p>
             </div>
-            <div class="col-md-6">
-                <img class="side-right" src="img/sounds-of-weather2.jpg">
-                <img class="side-right" src="img/sounds-of-weather3.jpg">
-                <img class="side-right" src="img/sounds-of-weather4.jpg">
+            <div class="col-md-6 side-right">
+                <img src="img/sounds-of-weather2.jpg">
+                <img src="img/sounds-of-weather3.jpg">
+                <img src="img/sounds-of-weather4.jpg">
             </div>
         </div>
     </div>

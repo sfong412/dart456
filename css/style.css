@@ -45,28 +45,16 @@ h6 {
     font-family: 'senbold';
 }
 
+.construction {
+    height: 100%;
+}
+
 .sherm-logo {
     font-family: 'senextrabold';
 }
 
-img {
-    padding-bottom: 5px;
-}
-
-.showcase {
-    object-fit: cover;
-}
-
-.work {
-    border: 1px black solid;
-}
-
 iframe {
     padding-bottom: 5px;
-}
-
-table {
-    /*  display: block;*/
 }
 
 .title {
@@ -114,18 +102,59 @@ table {
 /* Index page CSS */
 
 .home_banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    background-image: url("../img/bg.jpg");
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 h1.home_banner {
-    position: absolute;
-    display: block;
-    left: 25%;
-    top: 25%;
+    top: 50%;
+}
+
+.showcase {
+    object-fit: cover;
+}
+
+.work-img img{
+}
+
+.work-text {
+    padding-top: 25px;
+}
+
+.work-text h2 {
+    font-size: 36px;
+}
+
+.showcase-row {
+    background: #eb7081;
+    color: white;
+    height: 300px;
+    margin: 0 12px 6px 12px;
+}
+
+.showcase-row-reversed {
+    background: #ffffff;
+    color: black;
+}
+
+.showcase-row:hover {
+    background: #fecb00;
+    color: black;
+    text-decoration: none;
+}
+
+.showcase-row h4 {
+    font-family: 'sen';
+}
+
+.main {
+    padding-bottom: 60px;
 }
 
 /* Work showcase page CSS */
@@ -147,22 +176,28 @@ h1.home_banner {
     margin-top: 20px;
     left: 60px;
     max-width: 640px;
+    padding-bottom: 100px;
 }
 
-#title-container {
+.title-container {
     position: absolute;
     font-family: 'senbold';
     font-size: 24px;
     color: white;
     left: 30%;
-    top: 75px;
-    mix-blend-mode: screen;
+    top: 6%;
     z-index: 99;
 }
 
-#title-container h1 {
+.title-container h1 {
     font-family: 'senextrabold';
     font-size: 60px;
+}
+
+.top-row .list {
+    position: absolute;
+    left: 45%;
+    top: 32%;
 }
 
 .list {
@@ -175,33 +210,113 @@ h1.home_banner {
     width: 100%;
 }
 
+.side-right img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
 .list li {
     font-family: 'sen';
     font-size: 24px;
     margin-left: 15%;
 }
 
-#title-container .list {
-    padding-left: 26%;
-}
-
-#title-container .list ul {}
-
-#title-container .list li {}
-
 .bottom-row {
     background-color: #f0324d;
     padding-top: 100px;
     padding-bottom: 100px;
     -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
-    clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);
+    /* clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);*/
 }
 
 .bottom-row .list {
+ /*
     margin-left: 10%;
+    color: red;
+*/
 }
 
-/* Swup CSS code */
+.bottom-row .col-md-6 {
+    padding-bottom: 100px;
+}
+
+/*For mobile screens*/
+@media only screen and (max-width: 800px) {
+
+
+    /* Index page CSS */
+
+    .work-img img{
+        height: 100%;
+    }
+
+    .showcase-row {
+    }
+    
+    .showcase-row-reversed {
+    }
+    
+    .showcase-row:hover {
+        background: #fecb00;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .showcase-row h4 {
+        font-family: 'sen';
+    }
+    
+    .main {
+        padding-bottom: 60px;
+    }
+    
+    /* Work showcase page CSS (mobile) */
+
+    #first-pic {
+        margin-top: 20px;
+        left: 0;
+        max-width: 640px;
+        padding-bottom: 0px;
+        width:100%;
+    }
+
+    .title-container {
+        position: relative;
+        color: white;
+        left: 0;
+        top: 12px;
+    }
+    
+    .title-container h1 {
+        font-family: 'senextrabold';
+        font-size: 32px;
+    }
+
+    .title-container.list {
+        padding: 0;
+    }
+
+    .top-row .list {
+        position: relative;
+        left: 0%;
+        top: 12px;
+    }
+
+    .bottom-row {
+        padding: 0;
+    }
+
+    .bottom-row .col-md-6 {
+        padding-bottom: 0;
+    }
+
+    .bottom-row .side-right {
+        padding-bottom: 100px;
+    }
+
+}
+
+/* Swup CSS code 
 
 .transition-fade {
     transition: 0.4s;
@@ -216,3 +331,4 @@ html.is-animating .transition-fade {
 html.is-leaving .transition-fade {
     opacity: 0;
 }
+*/

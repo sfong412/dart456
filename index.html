@@ -2,6 +2,7 @@
 
 <head>
     <title>sherman fong - portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,18 +15,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <!--
-        <script src="js/swup.js">
-        </script>
-    -->
-    <script defer src="node_modules/swup/dist/swup.min.js"></script>  
+    <script src="node_modules/swup/dist/swup.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-        <a class="navbar-brand sherm-logo" href="/index.html">sherm.</a>
+        <a class="navbar-brand sherm-logo" href="index.html">sherm.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,68 +31,108 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="about.html">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">works</a>
+                    <a class="nav-link" href="works.html">works</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="contact.html">contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ass2.html">assignment 2</a>
+                    <a class="nav-link" href="ass2.html">assignment 2 + 3</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     </div>
+
     <div id="swup" class="container-fluid main transition-fade">
         <div class="row">
-            <div class="col-md">
-                <h1 class="home_banner">sherm is</h1>
-                <h1 class="a web developer"></h1>
-                <img class="home_banner" src="img/ass2_weirdcore.png" width="1000px" height="250px">
+            <div class="col-sm home_banner">
+                <h1>sherm is a guy</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md work">
-                <a href="/p1.html"><img class="showcase" src="img/traces.png" width="600px" height="400px"></a>
-                <p>Traces: Fleur-escent (2017)</p>
-                <p><i>digital art</i></p>
+
+        <a href="p1.html">
+            <div class="showcase-row d-flex flex-row">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/traces.png" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>TRACES: FLEUR-ESCENT</h2>
+                    <h4><i>2017</i></h4>
+                    <h4><i>digital art</i></h4>
+                </div>
             </div>
-            <div class="col-md work">
-                <a href="/p2.html"><img class="showcase" src="img/sounds-of-weather.jpg" width="600px"
-                        height="400px"></a>
-                <p>Sounds of Weather (2018)</p>
-                <p><i>digital art</i></p>
+        </a>
+
+        <a href="p2.html">
+            <div class="showcase-row showcase-row-reversed d-flex flex-row-reverse">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/sounds-of-weather.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>SOUNDS OF WEATHER</h2>
+                    <h4><i>2018</i></h4>
+                    <h4><i>digital art</i></h4>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md work">
-                <a href="p4.html"><img class="showcase" src="img/light-shine.jpg" width="600px" height="400px"></a>
-                <p>Where the Light Shines (2019)</p>
-                <p><i>music & sound design</i></p>
+        </a>
+
+        <a href="p4.html">
+            <div class="showcase-row d-flex flex-row">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/light-shine.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>WHERE THE LIGHT SHINES</h2>
+                    <h4><i>2019</i></h4>
+                    <h4><i>music & sound design</i></h4>
+                </div>
             </div>
-            <div class="col-md work">
-                <a href="p3.html"><img class="showcase" src="img/focal-points.png" width="600px" height="400px"></a>
-                <p>Focal Points | Points Focaux Web Site (2019)</p>
-                <p>web development</p>
+        </a>
+
+        <a href="p3.html">
+            <div class="showcase-row showcase-row-reversed d-flex flex-row-reverse ">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/focal-points.png" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>FOCAL POINTS | POINTS FOCAUX WEB SITE</h2>
+                    <h4><i>2019</i></h4>
+                    <h4><i>web development</i></h4>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md work">
-                <a href="p5.html"><img class="showcase" src="img/come-fly.png" width="600px" height="400px"></a>
-                <p>Come Fly With Me (2019)</p>
-                <p><i>music & sound design</i></p>
+        </a>
+
+        <a href="p5.html">
+            <div class="showcase-row d-flex flex-row">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/come-fly.png" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>COME FLY WITH ME</h2>
+                    <h4><i>2019</i></h4>
+                    <h4><i>music & sound design</i></h4>
+                </div>
             </div>
-            <div class="col-md work">
-                <a href="p6.html"><img class="showcase" src="img/sherm - nights into dreams.png" width="600px"
-                        height="400px"></a>
-                <p>Sherm the Sound Guy - Nights into Dreams (2020)</p>
-                <p><i>music project</i></p>
+        </a>
+
+        <a href="p6.html">
+            <div class="showcase-row showcase-row-reversed d-flex flex-row-reverse ">
+                <div class="col-sm-5 work-img">
+                    <img class="showcase" src="img/sherm-nights.png" width="100%" height="100%">
+                </div>
+                <div class="col-sm-7 work work-text">
+                    <h2>SHERM THE SOUND GUY - NIGHTS INTO DREAMS</h2>
+                    <h4><i>2020</i></h4>
+                    <h4><i>music project</i></h4>
+                </div>
             </div>
-        </div>
+        </a>
+
         <!--
         <table class="description">
             <tr>
