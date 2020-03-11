@@ -240,6 +240,17 @@ h1.home_banner {
     padding-bottom: 100px;
 }
 
+/* About page CSS */
+
+#bio {
+    padding: 30px 0;
+    border-bottom: 6px solid white;
+}
+
+#resume {
+    padding: 30px 0;
+}
+
 /*For mobile screens*/
 @media only screen and (max-width: 800px) {
 
