@@ -120,8 +120,7 @@ h1.home_banner {
     object-fit: cover;
 }
 
-.work-img img{
-}
+.work-img img {}
 
 .work-text {
     padding-top: 25px;
@@ -136,6 +135,7 @@ h1.home_banner {
     color: white;
     height: 300px;
     margin: 0 12px 6px 12px;
+    transition: 250ms;
 }
 
 .showcase-row-reversed {
@@ -156,6 +156,15 @@ h1.home_banner {
 .main {
     padding-bottom: 60px;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 
 /* Work showcase page CSS */
 
@@ -230,7 +239,7 @@ h1.home_banner {
 }
 
 .bottom-row .list {
- /*
+    /*
     margin-left: 10%;
     color: red;
 */
@@ -252,37 +261,33 @@ h1.home_banner {
 }
 
 /*For mobile screens*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
 
 
     /* Index page CSS */
 
-    .work-img img{
+    .work-img img {
         height: 100%;
     }
 
-    .showcase-row {
-        
-    }
-    
-    .showcase-row-reversed {
+    .showcase-row {}
 
-    }
-    
+    .showcase-row-reversed {}
+
     .showcase-row:hover {
         background: #fecb00;
         color: black;
         text-decoration: none;
     }
-    
+
     .showcase-row h4 {
         font-family: 'sen';
     }
-    
+
     .main {
         padding-bottom: 60px;
     }
-    
+
     /* Work showcase page CSS (mobile) */
 
     #first-pic {
@@ -290,7 +295,7 @@ h1.home_banner {
         left: 0;
         max-width: 640px;
         padding-bottom: 0px;
-        width:100%;
+        width: 100%;
     }
 
     .title-container {
@@ -299,7 +304,7 @@ h1.home_banner {
         left: 0;
         top: 12px;
     }
-    
+
     .title-container h1 {
         font-family: 'senextrabold';
         font-size: 32px;
@@ -327,6 +332,13 @@ h1.home_banner {
         padding-bottom: 100px;
     }
 
+}
+
+/*Assignment CSS code*/
+
+.img-ass {
+    width: 100%;
+    padding: 0 20%;
 }
 
 /* Swup CSS code 
