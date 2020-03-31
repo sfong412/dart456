@@ -1,0 +1,415 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: 'sen';
+    src: url('../font/sen_regular_macroman/sen-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'senbold';
+    src: url('../font/sen_bold_macroman/sen-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'senextrabold';
+    src: url('../font/sen_extrabold_macroman/sen-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nerislight';
+    src: url('../font/neris_light_macroman/Neris-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body,
+div,
+p,
+a,
+li,
+ul {
+    font-family: 'nerislight', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'senbold';
+}
+
+.construction {
+    height: 100%;
+}
+
+.sherm-logo {
+    font-family: 'senextrabold';
+}
+
+iframe {
+    padding-bottom: 5px;
+}
+
+.title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0 12px 0;
+}
+
+.media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mockup img {
+    padding-right: 15px;
+}
+
+.members {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0 12px 0;
+}
+
+.description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0 12px 0;
+}
+
+.back {
+    /*
+    margin-left: auto;
+    margin-right: auto;*/
+    margin-left: 5%;
+}
+
+.back p {
+    display: inline;
+}
+
+/* Index page CSS */
+
+.home_banner {
+    background-image: url("../img/bg.jpg");
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+h1.home_banner {
+    top: 50%;
+}
+
+.showcase {
+    object-fit: cover;
+}
+
+.work-img img {}
+
+.work-text {
+    padding: 48px;
+}
+
+.work-text h2 {
+    font-size: 36px;
+}
+
+.showcase-row {
+    background: #eb7081;
+    color: white;
+    height: 300px;
+    margin: 0 12px 24px 12px;
+    transition: 250ms;
+
+    img {   
+        max-height: 300px;
+    }
+}
+
+.showcase-row-reversed {
+    background: #ffffff;
+    color: black;
+}
+
+.showcase-row:hover {
+    background: #fecb00;
+    color: black;
+    text-decoration: none;
+}
+
+.showcase-row h4 {
+    font-family: 'sen';
+}
+
+.main {
+    padding-bottom: 60px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* Work showcase page CSS */
+
+.main {
+    background-color: #f0324d;
+    background-image: url('../img/stripes-light.png');
+    background-blend-mode: multiply;
+    color: white;
+}
+
+.top-row {
+    /*background-color: #eb7081; */
+    background-image: linear-gradient(150deg, #eb7081, #f0324d);
+    padding-bottom: 100px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+#first-pic {
+    position: relative;
+    margin-top: 20px;
+    left: 60px;
+    max-width: 640px;
+    padding-bottom: 100px;
+}
+
+.title-container {
+    position: absolute;
+    font-family: 'senbold';
+    font-size: 24px;
+    color: white;
+    left: 30%;
+    top: 6%;
+    z-index: 99;
+}
+
+.title-container h1 {
+    font-family: 'senextrabold';
+    font-size: 60px;
+    mix-blend-mode: screen;
+}
+
+.top-row .list {
+    position: absolute;
+    left: 45%;
+    top: 32%;
+}
+
+.list {
+    font-family: 'senextrabold';
+    font-size: 32px;
+    list-style-type: none;
+}
+
+.side-right {
+    width: 100%;
+
+    img {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+
+.list li {
+    font-family: 'sen';
+    font-size: 24px;
+    margin-left: 15%;
+}
+
+.bottom-row {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
+    /* clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);*/
+}
+
+.bottom-row .list {
+    margin: 0 32px;
+}
+
+.bottom-row .col-md-6 {
+    padding-bottom: 100px;
+}
+
+.back-button {
+    display: block;
+    width: 120px;
+    background: white;
+    transition: 250ms;
+}
+
+.back-button div {
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 15px;
+}
+
+.back-button p {
+    font-family: 'senbold';
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.back-button:hover {
+    background: #fecb00;
+    color: black;
+    text-decoration: none;
+}
+
+/* About page CSS */
+
+#bio {
+    padding: 30px 0;
+}
+
+#resume {
+    padding: 30px 0;
+}
+
+@include media-breakpoint-down(sm) {
+
+    
+    .showcase-row {
+        h2 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+}
+
+/*For mobile screens*/
+@include media-breakpoint-down(md) {
+
+    /* Index page CSS */
+
+    .work-img img {
+        height: 100%;
+    }
+
+    .showcase-row {
+        height: 100%;
+        margin: 0 0 24px 0; 
+
+        .work-img {
+            padding: 0;
+        }
+    }
+
+    .showcase-row-reversed {}
+
+    .showcase-row:hover {
+        background: #fecb00;
+        color: black;
+        text-decoration: none;
+    }
+
+    .showcase-row h4 {
+        font-family: 'sen';
+    }
+
+    .main {
+        padding-bottom: 60px;
+    }
+
+    /* Work showcase page CSS (mobile) */
+
+    #first-pic {
+        margin-top: 20px;
+        left: 0;
+        max-width: 640px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+    .title-container {
+        position: relative;
+        color: white;
+        left: 0;
+        top: 12px;
+    }
+
+    .title-container h1 {
+        font-family: 'senextrabold';
+        font-size: 32px;
+    }
+
+    .title-container.list {
+        padding: 0;
+    }
+
+    .top-row .list {
+        position: relative;
+        left: 0%;
+        top: 12px;
+    }
+
+    .bottom-row {
+        padding: 0;
+    }
+
+    .bottom-row .col-md-6 {
+        padding-bottom: 0;
+    }
+
+    .bottom-row .side-right {
+        padding-bottom: 100px;
+    }
+
+}
+
+/*Assignment CSS code*/
+
+.img-ass {
+    width: 100%;
+    padding: 0 20%;
+}
+
+/* Swup CSS code 
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 0;
+}
+*/
