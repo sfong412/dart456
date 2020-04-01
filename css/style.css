@@ -10154,27 +10154,24 @@ a:visited {
   padding: 30px 0;
 }
 
+/*For mobile screens*/
 @media (max-width: 767.98px) {
+  /* Index page CSS */
+  .showcase-row {
+    height: 600px;
+    margin: 0 0 24px 0;
+  }
   .showcase-row h2 {
     font-size: 24px;
   }
   .showcase-row h4 {
     font-size: 18px;
   }
-}
-/*For mobile screens*/
-@media (max-width: 991.98px) {
-  /* Index page CSS */
-  .work-img img {
-    height: 100%;
-  }
-
-  .showcase-row {
-    height: 100%;
-    margin: 0 0 24px 0;
-  }
   .showcase-row .work-img {
     padding: 0;
+  }
+  .showcase-row .work-img img {
+    height: 100%;
   }
 
   .showcase-row:hover {
