@@ -9974,6 +9974,7 @@ iframe {
 /* Index page CSS */
 .home_banner {
   background-image: url("../img/bg.jpg");
+  background-size: cover;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 60px;
@@ -9981,6 +9982,7 @@ iframe {
   padding-bottom: 60px;
   margin-bottom: 60px;
   text-align: center;
+  height: 180px;
 }
 
 h1.home_banner {
@@ -10048,7 +10050,7 @@ a:visited {
 .top-row {
   /*background-color: #eb7081; */
   background-image: linear-gradient(150deg, #eb7081, #f0324d);
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
@@ -10070,7 +10072,6 @@ a:visited {
   top: 6%;
   z-index: 99;
 }
-
 .title-container h1 {
   font-family: "senextrabold";
   font-size: 60px;
@@ -10088,6 +10089,11 @@ a:visited {
   font-size: 32px;
   list-style-type: none;
 }
+.list li {
+  font-family: "sen";
+  font-size: 24px;
+  margin-left: 15%;
+}
 
 .side-right {
   width: 100%;
@@ -10097,23 +10103,17 @@ a:visited {
   padding-bottom: 5px;
 }
 
-.list li {
-  font-family: "sen";
-  font-size: 24px;
-  margin-left: 15%;
-}
-
 .bottom-row {
   padding-top: 100px;
   padding-bottom: 50px;
+  /*
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
-  /* clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);*/
+   clip-path: polygon(0 10%, 1600px 0, 1600px 92%, 50% 100%, 0 100%);
+   */
 }
-
 .bottom-row .list {
   margin: 0 32px;
 }
-
 .bottom-row .col-md-6 {
   padding-bottom: 100px;
 }
@@ -10124,22 +10124,43 @@ a:visited {
   background: white;
   transition: 250ms;
 }
-
 .back-button div {
   left: 0;
   bottom: 0;
   margin: 0;
   padding: 15px;
 }
-
 .back-button p {
   font-family: "senbold";
   color: black;
   margin: 0;
   padding: 0;
 }
-
 .back-button:hover {
+  background: #fecb00;
+  color: black;
+  text-decoration: none;
+}
+
+.cv-button {
+  display: block;
+  width: 200px;
+  background: white;
+  transition: 250ms;
+}
+.cv-button div {
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.cv-button p {
+  font-family: "senbold";
+  color: black;
+  margin: 0;
+  padding: 5px 15px;
+}
+.cv-button:hover {
   background: #fecb00;
   color: black;
   text-decoration: none;
@@ -10152,6 +10173,17 @@ a:visited {
 
 #resume {
   padding: 30px 0;
+}
+
+.about-row {
+  padding: 20px 0;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
 }
 
 /*For mobile screens*/
@@ -10211,6 +10243,10 @@ a:visited {
 
   .title-container.list {
     padding: 0;
+  }
+
+  .top-row {
+    padding-bottom: 100px;
   }
 
   .top-row .list {
